@@ -3,7 +3,7 @@ import pygame
 
 # pygame setup
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((640, 480))
 clock = pygame.time.Clock()
 running = True
 dt = 0
@@ -31,6 +31,8 @@ while running:
         player_pos.x -= 300 * dt
     if keys[pygame.K_d]:
         player_pos.x += 300 * dt
+    if keys[pygame.K_ESCAPE]:
+        pygame.quit()
 
     # flip() the display to put your work on screen
     pygame.display.flip()
@@ -38,6 +40,6 @@ while running:
     # limits FPS to 60
     # dt is delta time in seconds since last frame, used for framerate-
     # independent physics.
-    dt = clock.tick(60) / 1000
+    dt = clock.tick(30) / 1000
 
 pygame.quit()
