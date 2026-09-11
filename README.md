@@ -1,5 +1,5 @@
 # battletest
-### pygame recreation of Undertale's systems/mechanics
+**pygame recreation of Undertale's systems/mechanics**
 
 ## Installation
 Typically I use uv for python dependency management, so to install battletest run
